@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
-    <title>Snake Game</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <title>Snake Game</title>
 </head>
 <body>
-    <h2>Snake Game</h2>
-    <div id="msg">Press space or buttons to pause/resume</div>
-    <div id="container">
-        <div id="score">Score: <span id="scoreVal">0</span></div>
-        <canvas id="gameBoard" width="500" height="500"></canvas>
-        <div class="control-buttons">
-            <button id="up">↑</button>
-            <div>
-                <button id="left">←</button>
-                <button id="down">↓</button>
-                <button id="right">→</button>
-            </div>
-        </div>
-        <div class="action-buttons">
-            <button id="pauseBtn">Pause</button>
-            <button id="restartBtn">Restart</button>
-        </div>
+  <h2>Snake Game</h2>
+  <div id="msg">Press SPACE (desktop) or use buttons/swipe (mobile)</div>
+  
+  <div id="container">
+    <canvas id="gameBoard" width="500" height="500"></canvas>
+    <div id="score">Score: <span id="scoreVal">0</span></div>
+  </div>
+
+  <!-- Action buttons -->
+  <div class="action-buttons">
+    <button id="pauseBtn">Pause</button>
+    <button id="restartBtn">Restart</button>
+  </div>
+
+  <!-- Mobile Controls -->
+  <div class="controls">
+    <div><button id="up">↑</button></div>
+    <div>
+      <button id="left">←</button>
+      <button id="down">↓</button>
+      <button id="right">→</button>
     </div>
+  </div>
 </body>
 </html>
